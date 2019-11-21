@@ -23,7 +23,7 @@ class Owner
     @@owners.clear
   end
   def cats
-    pets.collect do pet 
+    pets.collect do pet
       pet.class==cat
     end
   end
