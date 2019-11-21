@@ -23,7 +23,7 @@ class Owner
     @@owners.clear
   end
   def cats
-    @pets.collect {|pet| pet.class==cat}
+    @pets.collect {|pet| pet.class==cats}
   end
   def dogs
   end
