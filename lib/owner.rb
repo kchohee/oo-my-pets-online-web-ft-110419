@@ -8,7 +8,7 @@ class Owner
     @species = "human"
     @owner = self
     @@owners << self
-    pets = []
+    @pets = []
   end
   def say_species
     "I am a #{@species}."
@@ -23,7 +23,7 @@ class Owner
     @@owners.clear
   end
   def cats
-    pets.collect do pet
+    @pets.collect do pet
       pet.class==cat
     end
   end
