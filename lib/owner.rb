@@ -26,6 +26,7 @@ class Owner
     @pets.filter {|pet| pet.class== Cat}
   end
   def dogs
+    @pets.filter {|pet| pet.class== Dog}
   end
   def buy_cat
   end
