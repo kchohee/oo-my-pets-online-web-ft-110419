@@ -14,23 +14,25 @@ class Owner
     "I am a #{@species}."
   end
   def self.all
-    @@owners
+    return @@owners
   end
   def self.count
-    @@owners.count
+    return @@owners.count
   end
   def self.reset_all
     @@owners.clear
   end
   def cats
-    @pets.filter {|pet| pet.class== Cat}
+    return @pets.filter {|pet| pet.class== Cat}
   end
   def dogs
-    @pets.filter {|pet| pet.class== Dog}
+    return @pets.filter {|pet| pet.class== Dog}
   end
-  def buy_cat
+  def buy_cat(name)
+    return Cat.new(name, self)
   end
   def buy_dog
+    
   end
   def walk_dogs
   end
