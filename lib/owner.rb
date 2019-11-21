@@ -23,7 +23,9 @@ class Owner
     @@owners.clear
   end
   def cats
-    pets.collect {|pet| pet.class==cat}
+    pets.collect do pet 
+      pet.class==cat
+    end
   end
   def dogs
   end
