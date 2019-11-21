@@ -11,13 +11,13 @@ class Owner
     pets = []
   end
   def say_species
-    "I am #{@species}."
+    "I am a #{@species}."
   end
   def self.all
     @@owners
   end
   def self.count
-    @@owner.all.count
+    @@owners.count
   end
   def self.reset_all
     @@owners.all.clear
