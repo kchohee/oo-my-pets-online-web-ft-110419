@@ -32,7 +32,7 @@ class Owner
     return Cat.new(name, self)
   end
   def buy_dog
-    
+
   end
   def walk_dogs
   end
